@@ -1,0 +1,22 @@
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.exe
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.deps.json
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.runtimeconfig.json
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.runtimeconfig.dev.json
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.dll
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.pdb
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.AssemblyInfo.cs
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.dll
+F:\Source's\University Project\AI\AStar\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.pdb
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.AssemblyInfo.cs
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.dll
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar.pdb
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.exe
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.deps.json
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.runtimeconfig.json
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.runtimeconfig.dev.json
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.dll
+F:\Source's\University Project\AI\AStar _New_Version\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar.pdb

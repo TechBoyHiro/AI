@@ -1,0 +1,59 @@
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.exe
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.deps.json
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.runtimeconfig.json
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.runtimeconfig.dev.json
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.pdb
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.AssemblyInfo.cs
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.pdb
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+F:\Source's\University Project\AI\Genetic Algorithm\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.csproj.CopyComplete
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.exe
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.deps.json
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.runtimeconfig.json
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.runtimeconfig.dev.json
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Genetic Algorithm.pdb
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Caching.Memory.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Configuration.Binder.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Options.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\Microsoft.Extensions.Primitives.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.Collections.Immutable.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.ComponentModel.Annotations.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.Diagnostics.DiagnosticSource.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\bin\Debug\netcoreapp3.0\System.Runtime.CompilerServices.Unsafe.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.AssemblyInfo.cs
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.csproj.CopyComplete
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.dll
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.pdb
+F:\Source's\University Project\AI\Genetic Algorithm ADVANCE\Genetic Algorithm\Genetic Algorithm\obj\Debug\netcoreapp3.0\Genetic Algorithm.genruntimeconfig.cache

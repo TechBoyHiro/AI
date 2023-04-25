@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "CARAStar_Without_Goal/1.0.0": {
+        "runtime": {
+          "CARAStar_Without_Goal.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CARAStar_Without_Goal/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,446 @@
+﻿using CARAStar;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace CARAStar
+{
+    public enum Direction
+    {
+        Horizontal =1 ,
+        Vertical =2
+    }
+
+    public class Car
+    {
+        public int length { get; set; }
+        public int StartRow { get; set; }
+        public int StartColumn { get; set; }
+        public Direction Direction { get; set; }
+        // The Main Car Id is 1
+        public int CarId { get; set; }
+
+        public Car Copy()
+        {
+            var result = new Car();
+            result.CarId = this.CarId;
+            result.length = this.length;
+            result.StartRow = this.StartRow;
+            result.Direction = this.Direction;
+            result.StartColumn = this.StartColumn;
+            return result;
+        }
+
+        public void MoveRight()
+        {
+            this.StartColumn++; ;
+        }
+
+        public void MoveLeft()
+        {
+            this.StartColumn--;
+        }
+
+        public void MoveUp()
+        {
+            this.StartRow--;
+        }
+
+        public void MoveDown()
+        {
+            this.StartRow++;
+        }
+    }
+
+
+    public class CarNode
+    {
+        public int[,] Board { get; set; }
+        public List<Car> Cars { get; set; }
+        public CarNode Parent { get; set; }
+        public bool win { get; set; }
+        public int Hardibility { get; set; }
+        public int Movement { get; set; }
+
+        public CarNode(List<Car> cars, CarNode parent,int hardibility)
+        {
+            Cars = cars;
+            Parent = parent;
+            Hardibility = hardibility;
+            SetMovement();
+            Board = new int[6, 6];
+            string hash = Inject(Board, Cars);
+            HashLookUpTable.AddHash(hash);
+            Winner win = IsFinal(hash);
+            if (win != null)
+            {
+                Console.WriteLine("Time : " + Timer.Stop());
+                Console.WriteLine("Hardibility of this node : " + Hardibility);
+                this.win = true;
+                Console.WriteLine("******************************** SOLVED :) *****************************");
+                Console.WriteLine("$$$$ INFO => HashNumber : " + win.hashnumber + " - Hash : " + win.hash + " $$$$$$$$$$$$$");
+                PrintPath();
+                Console.WriteLine("******************************** END *****************************");
+                Environment.Exit(0);
+            }
+        }
+
+
+        public string Inject(int[,] Board, List<Car> cars)
+        {
+            foreach (Car item in cars)
+            {
+                if (item.Direction == Direction.Horizontal)
+                {
+                    for (int i = 0; i < item.length; i++)
+                    {
+                        int temp1 = item.StartRow;
+                        int temp2 = item.StartColumn + i;
+                        Board[temp1, temp2] = item.CarId;
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < item.length; i++)
+                        Board[item.StartRow - i, item.StartColumn] = item.CarId;
+                }
+            }
+            // create a specific hash number for this board [36 number]
+            string hash = "";
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                {
+                    hash = hash.ToString() + Board[i, j].ToString();
+                }
+            }
+            return hash;
+        }
+
+        public int[,] InjectByReturnBoard(int[,] Board, List<Car> cars)
+        {
+            foreach (Car item in cars)
+            {
+                if (item.Direction == Direction.Horizontal)
+                {
+                    for (int i = 0; i < item.length; i++)
+                    {
+                        int temp1 = item.StartRow;
+                        int temp2 = item.StartColumn + i;
+                        Board[temp1, temp2] = item.CarId;
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < item.length; i++)
+                        Board[item.StartRow - i, item.StartColumn] = item.CarId;
+                }
+            }
+            // create a specific hash number for this board [36 number]
+            return Board;
+        }
+
+        public bool Move(int CarId,int MovementNumber,Side Side)
+        {
+            Car car = Cars.Where(x => x.CarId == CarId).First();
+            switch (Side)
+            {
+                case (Side.Down):
+                    if (!((6 - car.StartRow) >= MovementNumber)) // Check if Car Could Go (MovementNumber) Down
+                        return false;
+                    for(int i=1;i<=MovementNumber;i++)
+                    {
+                        if(Board[(car.StartRow+i),car.StartColumn] == 0)
+                        {
+                            Cars.Where(x => x.CarId == CarId).First().StartRow++;
+                            string hash = Inject(new int [6,6],Cars);
+                            IsFinal(hash);
+                            Console.WriteLine("Moving Car" + CarId + " , " + MovementNumber + " to " + Side.ToString());
+                            PrintBoard(InjectByReturnBoard(new int [6,6],Cars));
+                        }
+                        else
+                        {
+                            bool success = Move(Board[(car.StartRow + i), car.StartColumn], 1, Side.Left);
+                            if(!success)
+                            {
+                                Move(Board[(car.StartRow + i), car.StartColumn],1, Side.Right); 
+                            }
+                            i--;
+                        }
+                    }
+                    return true;
+                case (Side.Up):
+                    if (!(((car.StartRow - (car.length - 1)) - 0) >= MovementNumber)) // Check if Car Could Go (MovementNumber) Up
+                        return false;
+                    for (int i = 1; i <= MovementNumber; i++)
+                    {
+                        if (Board[((car.StartRow + (car.length - 1)) + i), car.StartColumn] == 0)
+                        {
+                            Cars.Where(x => x.CarId == CarId).First().StartRow--;
+                            string hash = Inject(new int[6, 6], Cars);
+                            IsFinal(hash);
+                            Console.WriteLine("Moving Car" + CarId + " , " + MovementNumber + " to " + Side.ToString());
+                            PrintBoard(InjectByReturnBoard(new int[6, 6], Cars));
+                        }
+                        else
+                        {
+                            bool success = Move(Board[((car.StartRow + (car.length - 1)) + i), car.StartColumn], 1, Side.Left);
+                            if (!success)
+                            {
+                                Move(Board[((car.StartRow + (car.length - 1)) + i), car.StartColumn], 1, Side.Right);
+                            }
+                            i--;
+                        }
+                    }
+                    return true;
+                case (Side.Right):
+                    if (!(6 - (car.StartColumn + (car.length - 1)) >= MovementNumber)) // Check if Car Could Go (MovementNumber) Right
+                        return false;
+                    for (int i = 1; i <= MovementNumber; i++)
+                    {
+                        if (Board[car.StartRow, (car.StartColumn + (car.length - 1))+i] == 0)
+                        {
+                            Cars.Where(x => x.CarId == CarId).First().StartColumn++;
+                            string hash = Inject(new int[6, 6], Cars);
+                            IsFinal(hash);
+                            Console.WriteLine("Moving Car" + CarId + " , " + MovementNumber + " to " + Side.ToString());
+                            PrintBoard(InjectByReturnBoard(new int[6, 6], Cars));
+                        }
+                        else
+                        {
+                            bool success = Move(Board[car.StartRow, (car.StartColumn + (car.length - 1)) + i], 1, Side.Up);
+                            if (!success)
+                            {
+                                Move(Board[car.StartRow, (car.StartColumn + (car.length - 1)) + i], 1, Side.Down);
+                            }
+                            i--;
+                        }
+                    }
+                    return true;
+                case (Side.Left):
+                    if ((car.StartColumn+1) >= MovementNumber) // Check if Car Could Go (MovementNumber) Left
+                        return false;
+                    for (int i = 1; i <= MovementNumber; i++)
+                    {
+                        if (Board[car.StartRow, (car.StartColumn - i)] == 0)
+                        {
+                            Cars.Where(x => x.CarId == CarId).First().StartColumn--;
+                            string hash = Inject(new int[6, 6], Cars);
+                            IsFinal(hash);
+                            Console.WriteLine("Moving Car" + CarId + " , " + MovementNumber + " to " + Side.ToString());
+                            PrintBoard(InjectByReturnBoard(new int[6, 6], Cars));
+                        }
+                        else
+                        {
+                            bool success = Move(Board[car.StartRow, (car.StartColumn - i)], 1, Side.Up);
+                            if (!success)
+                            {
+                                Move(Board[car.StartRow, (car.StartColumn - i)], 1, Side.Down);
+                            }
+                            i--;
+                        }
+                    }
+                    return true;
+                default: return false;
+            }
+        }
+
+
+        public List<CarNode> Successor()
+        {
+            List<CarNode> ToReturn = new List<CarNode>();
+            foreach (Car item in Cars)
+            {
+                if (item.Direction == Direction.Horizontal)
+                {
+                    if (item.StartColumn + item.length <= 5) // check if it has the ability to goes right
+                    {
+                        for (int i = item.StartColumn + item.length; i <= 5; i++)
+                        {
+                            if (Board[item.StartRow, i] == 0) // checking the rightside movement 
+                            {
+                                List<Car> Copy = new List<Car>(Cars.Select(x => x.Copy()));
+                                Copy.Where(x => x.StartColumn == item.StartColumn && x.StartRow == item.StartRow).First().StartColumn = i - (item.length - 1);
+                                string temphash = Inject(new int[6, 6], Copy);
+                                
+                                if(!HashLookUpTable.IsInTable(temphash))
+                                {
+                                    int hardibility = Movement + AStarInfraStructure.Heuristic(Copy);
+                                    ToReturn.Add(new CarNode(Copy, this, hardibility));
+                                }
+                            }
+                            else break;
+                        }
+                    }
+
+                    if (item.StartColumn >= 1) // check if it has the ability to goes left
+                    {
+                        for (int i = item.StartColumn - 1; i >= 0; i--)
+                        {
+                            if (Board[item.StartRow, i] == 0) // checking the leftside movement 
+                            {
+                                List<Car> Copy = new List<Car>(Cars.Select(x => x.Copy()));
+                                Copy.Where(x => x.StartColumn == item.StartColumn && x.StartRow == item.StartRow).First().StartColumn = (item.StartColumn - (item.StartColumn - i));
+                                string temphash = Inject(new int[6, 6], Copy);
+                                
+                                if (!HashLookUpTable.IsInTable(temphash))
+                                {
+                                    int hardibility = Movement + AStarInfraStructure.Heuristic(Copy);
+                                    ToReturn.Add(new CarNode(Copy, this, hardibility));
+                                }
+                            }
+                            else break;
+                        }
+                    }
+                }
+
+                else if (item.Direction == Direction.Vertical)
+                {
+                    if (item.StartRow - (item.length - 1) > 0) // check if it has ability to goes up
+                    {
+                        for (int i = (item.StartRow - item.length); i >= 0; i--)
+                        {
+                            if (Board[i, item.StartColumn] == 0) // it can goes up
+                            {
+                                List<Car> Copy = new List<Car>(Cars.Select(x => x.Copy()));
+                                Copy.Where(x => x.StartColumn == item.StartColumn && x.StartRow == item.StartRow).First().StartRow = (item.StartRow - (((item.StartRow - item.length) - i) + 1));
+                                string temphash = Inject(new int[6, 6], Copy);
+                                
+                                if (!HashLookUpTable.IsInTable(temphash))
+                                {
+                                    int hardibility = Movement + AStarInfraStructure.Heuristic(Copy);
+                                    ToReturn.Add(new CarNode(Copy, this, hardibility));
+                                }
+                            }
+                            else break;
+                        }
+                    }
+
+                    if (item.StartRow < 5) // check if it has ability to goes down
+                    {
+                        for (int i = item.StartRow + 1; i <= 5; i++)
+                        {
+                            if (Board[i, item.StartColumn] == 0) // it can goes down
+                            {
+                                List<Car> Copy = new List<Car>(Cars.Select(x => x.Copy()));
+                                Copy.Where(x => x.StartColumn == item.StartColumn && x.StartRow == item.StartRow).First().StartRow = (item.StartRow + (i - item.StartRow));
+                                string temphash = Inject(new int[6, 6], Copy);
+                                
+                                if (!HashLookUpTable.IsInTable(temphash))
+                                {
+                                    int hardibility = Movement + AStarInfraStructure.Heuristic(Copy);
+                                    ToReturn.Add(new CarNode(Copy, this, hardibility));
+                                }
+                            }
+                            else break;
+                        }
+                    }
+                }
+            }
+            return ToReturn;
+        }
+
+        public void SetMovement()
+        {
+            if(this.Parent == null)
+            {
+                Movement = 0;
+                return;
+            }
+            CarNode parent = this.Parent;
+            while(parent != null)
+            {
+                Movement++;
+                parent = parent.Parent;
+            }
+            Movement++;
+            return;
+        }
+
+        public Winner IsFinal(string hash)
+        {
+            //if (hash == HashStatistic.GoalHash)
+            //{
+            //    Winner win = new Winner();
+            //    win.hash = hash;
+            //    win.hashnumber = HashLookUpTable.FindHashIndex(hash, Creator.Root);
+            //    return win;
+            //}
+            //return null;
+            int indexone = hash.IndexOf("1");
+            switch (indexone)
+            {
+                case 12:
+                    if (hash.Substring(indexone + 2).StartsWith("0000"))
+                        win = true;
+                    break;
+                case 13:
+                    if (hash.Substring(indexone + 2).StartsWith("000"))
+                        win = true;
+                    break;
+                case 14:
+                    if (hash.Substring(indexone + 2).StartsWith("00"))
+                        win = true;
+                    break;
+                case 15:
+                    if (hash.Substring(indexone + 2).StartsWith("0"))
+                        win = true;
+                    break;
+                case 16:
+                    win = true;
+                    break;
+                default: break;
+            }
+            if (win)
+            {
+                Winner toreturn = new Winner();
+                toreturn.hash = hash;
+                toreturn.hashnumber = HashLookUpTable.FindHashIndex(hash);
+                return toreturn;
+            }
+            else
+                return null;
+        }
+
+        public void PrintBoard(int [,] Board)
+        {
+            //foreach(Car item in Cars)
+            //{
+            //    Console.WriteLine("Car Id :" + item.CarId + " | StartRow : " + item.StartRow + " | Start Column: " + item.StartColumn + " | Car Direction: " + item.Direction.ToString() + " | Car Length:" + item.length + "\n");
+            //}
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < 6; j++)
+                {
+                    if (j == 5)
+                    {
+                        Console.Write("|\t" + Board[i, j] + "\t|\n");
+                        Console.WriteLine("  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __  __");
+                    }
+
+                    else
+                    {
+                        Console.Write("|\t" + Board[i, j] + "\t|");
+                    }
+                }
+            }
+        }
+
+        public void PrintPath()
+        {
+            this.PrintBoard(this.Board);
+            Console.WriteLine("####################################### Node Number : " + Counter.counter + "########################################");
+            Console.WriteLine("======= Hardibility of this node : " + Hardibility +" ===========");
+            CarNode parent = this.Parent;
+            while (parent != null)
+            {
+                parent.PrintBoard(this.Board);
+                Counter.counter++;
+                Console.WriteLine("####################################### Node Number : " + Counter.counter + "########################################");
+                Console.WriteLine("======= Hardibility of this node : " + parent.Hardibility + " ===========");
+                parent = parent.Parent;
+            }
+        }
+    }
+}

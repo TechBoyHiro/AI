@@ -1,0 +1,22 @@
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.exe
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.deps.json
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.runtimeconfig.json
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.runtimeconfig.dev.json
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.dll
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.pdb
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.AssemblyInfo.cs
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.dll
+F:\Source's\University Project\AI\CSP_Sudoku\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.pdb
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.exe
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.deps.json
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.runtimeconfig.json
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.runtimeconfig.dev.json
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.dll
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\bin\Debug\netcoreapp3.0\CSP_Sudoku.pdb
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.AssemblyInfo.cs
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.dll
+F:\Source's\University Project\AI\CSP_Sudoku _Version2\CSP_Sudoku\obj\Debug\netcoreapp3.0\CSP_Sudoku.pdb

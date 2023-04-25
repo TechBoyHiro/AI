@@ -1,0 +1,11 @@
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\bin\Debug\netcoreapp3.0\CARBFS.exe
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\bin\Debug\netcoreapp3.0\CARBFS.deps.json
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\bin\Debug\netcoreapp3.0\CARBFS.runtimeconfig.json
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\bin\Debug\netcoreapp3.0\CARBFS.runtimeconfig.dev.json
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\bin\Debug\netcoreapp3.0\CARBFS.dll
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\bin\Debug\netcoreapp3.0\CARBFS.pdb
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\obj\Debug\netcoreapp3.0\CARBFS.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\obj\Debug\netcoreapp3.0\CARBFS.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\obj\Debug\netcoreapp3.0\CARBFS.AssemblyInfo.cs
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\obj\Debug\netcoreapp3.0\CARBFS.dll
+F:\Source's\University Project\AI\BFS\CARBFS\CARBFS\obj\Debug\netcoreapp3.0\CARBFS.pdb

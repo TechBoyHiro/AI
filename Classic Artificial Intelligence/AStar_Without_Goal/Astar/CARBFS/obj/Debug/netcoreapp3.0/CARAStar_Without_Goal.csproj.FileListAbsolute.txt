@@ -1,0 +1,11 @@
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar_Without_Goal.exe
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar_Without_Goal.deps.json
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar_Without_Goal.runtimeconfig.json
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar_Without_Goal.runtimeconfig.dev.json
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar_Without_Goal.dll
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\bin\Debug\netcoreapp3.0\CARAStar_Without_Goal.pdb
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar_Without_Goal.csprojAssemblyReference.cache
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar_Without_Goal.AssemblyInfoInputs.cache
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar_Without_Goal.AssemblyInfo.cs
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar_Without_Goal.dll
+F:\Source's\University Project\AI\AStar_Without_Goal\Astar\CARBFS\obj\Debug\netcoreapp3.0\CARAStar_Without_Goal.pdb
